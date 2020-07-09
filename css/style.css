@@ -149,6 +149,35 @@ a {
     color: #011C40;
 }
 
+.cruises {
+    display: flex;
+    flex-direction: column;
+    padding: 120px 103px;
+}
+
+.cruises__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cruises__card {
+    position: relative;
+    width: 260px;
+    height: 386px;
+    margin-bottom: 30px;
+    /* Как убрать у второго ряда mb? */
+}
+
+.cruises__card-title {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #F9FBFD;
+}
+
 .reservation {
     background-image: url(/img/reservation-cover.jpg);
     height: 555px;
@@ -216,7 +245,6 @@ a {
     height: 18px;
     background: #F9FBFD;
 }
-/* Как сделать галочку как в макете? */
 
 .reservation__text-checkbox {
     display: inline;
