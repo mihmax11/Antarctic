@@ -99,6 +99,56 @@ a {
     margin-left: 88px;
 }
 
+.section__title {
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 28px;
+    color: #011C40;
+    margin-bottom: 60px;
+}
+
+.advantage {
+
+    display: flex;
+    flex-direction: column;
+    padding: 120px 103px;
+    background-image: url(/img/advantage-cover.jpg);
+}
+
+.advantage__cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantage__card {
+    width: 360px;
+    min-height: 241px;
+    background: #F9FBFD;
+    padding: 38px 30px 30px;
+    margin-right: 20px;
+}
+
+.advantage__card:last-child {
+    margin-right: 0;
+}
+
+.advantage__icon {
+    margin-bottom: 25px;
+}
+
+.advantage__subtitle {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #011C40;
+}
+
+.advantage__text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #011C40;
+}
+
 
 .footer {
     width: 100%;
