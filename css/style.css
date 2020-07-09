@@ -149,6 +149,44 @@ a {
     color: #011C40;
 }
 
+.map {
+    padding: 120px 103px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.map__text {
+    margin-left: 100px;
+}
+
+.map__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #011C40;
+    margin-bottom: 40px;
+}
+
+.map__adress {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.map__adress a {
+    color: #011C40;
+}
+
+.map__adress:last-child {
+    margin-bottom: 0;
+}
+
+.map__icon {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
 
 .footer {
     width: 100%;
