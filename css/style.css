@@ -227,6 +227,11 @@ a:hover {
     color: #011C40;
 }
 
+.hidden {
+    /* visibility: hidden; */
+    display: none;
+}
+
 .reservation__form {
     width: 403px;
     background: #011C40;

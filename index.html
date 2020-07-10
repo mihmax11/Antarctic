@@ -144,15 +144,14 @@
 
             <form class="reservation__form" action="#" enctype="multipart/form-data" method="post" name="reservation">
                 <p class="reservation__form-title">Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
-                <label><input class="reservation__form-input" type="text" name="name" id="name" placeholder="Имя"
-                        autocomplete="on"></label>
-                <label><input class="reservation__form-input" type="tel" name="phone" id="phone" placeholder="Телефон"
-                        autocomplete="on" required></label>
-                <label><input class="reservation__form-input" type="email" name="email" id="email" placeholder="Email"
-                        autocomplete="on" required></label>
-                <label>
-                    <input class="reservation__checkbox" type="checkbox" checked>Я согласен на обработку моих персональных данных
-                </label>
+                <label for="name"><span class="hidden">Имя</span></label>
+                <input class="reservation__form-input" type="text" name="name" id="name" placeholder="Имя" autocomplete="on">
+                <label for="phone"><span class="hidden">Телефон</span></label>
+                <input class="reservation__form-input" type="tel" name="phone" id="phone" placeholder="Телефон" autocomplete="on" required>
+                <label for="email"><span class="hidden">Почта</span></label>
+                <input class="reservation__form-input" type="email" name="email" id="email" placeholder="Email" autocomplete="on" required>
+                <label for="checkbox"></label>
+                <input class="reservation__checkbox" id="checkbox" type="checkbox" checked><span class="reservation__text-checkbox">Я согласен на обработку моих персональных данных</span>
                 <button class="reservation__button" type="submit">Оставить заявку</button>
             </form>
 
