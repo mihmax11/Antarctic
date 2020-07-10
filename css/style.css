@@ -226,9 +226,11 @@ a:hover {
 }
 
 .reservation__text {
+    width: 351px;
     font-size: 18px;
     line-height: 27px;
     color: #011C40;
+    margin: 0;
 }
 
 .hidden {
