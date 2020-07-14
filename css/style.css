@@ -2,7 +2,8 @@
     font-style: normal;
     font-weight: 500;
     font-family: "Montserrat";
-    font-display: swap; /* Для шрифта не задается период блокировки и задается бесконечный период подмены. */
+    font-display: swap;
+    /* Для шрифта не задается период блокировки и задается бесконечный период подмены. */
     src: url("../fonts/Montserrat-Medium.woff2") format("woff2"),
         url("../fonts/Montserrat-Medium.woff2") format("woff");
 }
@@ -35,17 +36,24 @@ a:hover {
     opacity: .7;
 }
 
-.page {
-    width: 1366px;
+body {
+    width: 100%;
     margin: 0 auto;
     background: #F9FBFD;
 }
 
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.intro {
+    background: url("../img/cover.jpg") center center/cover no-repeat;
+    background-color: #215d99;
+}
+
 .header {
-    width: 1160px;
-    position: absolute;
-    margin: 35px 0 0 103px;
-    z-index: 10;
+    max-width: 1160px;
 }
 
 .nav {
@@ -65,7 +73,7 @@ a:hover {
     list-style: none;
 }
 
-.nav-item a{
+.nav-item a {
     text-decoration: none;
     color: #F9FBFD;
 }
@@ -74,20 +82,17 @@ a:hover {
     margin-right: 0;
 }
 
-.cover {
-    position: relative;
-    height: 650px;
-    background: url("../img/cover.jpg") center center/cover no-repeat;
-    background-color: #215d99;
+
+.main {
+    padding: 210px 532px 328px 198px;
 }
 
-.cover__text {
-    position: absolute;
-    top: 283px;
-    left: 198px;
+.main-info {
+    max-width: 636px;
+    margin: 0;
 }
 
-.cover__title {
+.main-info__title {
     font-weight: 700;
     font-size: 54px;
     line-height: 66px;
@@ -95,53 +100,94 @@ a:hover {
     margin: 0 0 30px;
 }
 
-.cover__subtitle {
+.main-info__subtitle {
     font-size: 20px;
     line-height: 24px;
     color: #F9FBFD;
+    margin: 0;
 }
+
+
+
+
+
+
+
+
+
 
 .about {
-    padding: 120px 103px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 1160px;
+    margin: 0 auto;
 }
 
-.about__title {
+.about-info {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about-info__title {
     font-weight: 600;
     font-size: 28px;
     color: #011C40;
-    margin-bottom: 40px;
+    margin: 0 0 40px;
 }
 
-.about__text {
+.about-info__text {
     font-size: 16px;
     line-height: 24px;
     color: #011C40;
+    margin: 0;
 }
 
-.about__img {
-    margin-left: 88px;
-}
 
-.section__title {
-    margin: 0 auto;
-    font-weight: 600;
-    font-size: 28px;
-    color: #011C40;
-    margin-bottom: 60px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .advantage {
-    display: flex;
-    flex-direction: column;
     padding: 120px 103px;
     background: url("../img/advantage-cover.jpg") center center/cover no-repeat;
     background-color: #dae8f5;
 }
 
-.advantage__cards {
+.advantage-info {
+    width: 1130px;
+    margin: 0 auto;
+}
+
+.advantage-info__title {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 28px;
+    color: #011C40;
+    margin: 0 0 60px;
+}
+
+.advantage-info__cards {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -149,7 +195,7 @@ a:hover {
     margin: 0;
 }
 
-.advantage__card {
+.advantage-info__card {
     width: 360px;
     min-height: 241px;
     background: #F9FBFD;
@@ -157,36 +203,65 @@ a:hover {
     list-style: none;
 }
 
-.advantage__card:last-child {
+.advantage-info__card:last-child {
     margin-right: 0;
 }
 
-.advantage__subtitle {
+.advantage-info__subtitle {
     margin-bottom: 20px;
     font-weight: 500;
     font-size: 18px;
     color: #011C40;
+    margin: 25px 0 20px;
 }
 
-.advantage__text {
+.advantage-info__text {
     font-size: 14px;
     line-height: 20px;
     color: #011C40;
+    margin: 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 .cruises {
-    display: flex;
-    flex-direction: column;
     padding: 120px 103px;
 }
 
-.cruises__cards {
+.cruises-info {
+    width: 1130px;
+    margin: 0 auto;
+}
+
+.cruises-info__title {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 28px;
+    color: #011C40;
+    margin: 0 0 60px;
+}
+
+.cruises-info__cards {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
 }
 
-.cruises__card {
+.cruises-info__card {
     position: relative;
     width: 260px;
     height: 386px;
@@ -195,14 +270,49 @@ a:hover {
     list-style: none;
 }
 
-.cruises__card-title {
+.cruises-info__card-title {
     position: absolute;
-    left: 30px;
     bottom: 30px;
+    left: 30px;
+    margin: 0;
     font-weight: 500;
     font-size: 18px;
     color: #F9FBFD;
 }
+
+.cruises-info__more {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    display: none;
+    background: #011C40;
+    box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+    padding: 35px 25px;
+}
+
+.cruises-info__more-parameter {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #F9FBFD;
+    margin: 0;
+}
+
+.cruises-info__card:hover .cruises-info__more {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
 
 .reservation {
     background: url("../img/reservation-cover.jpg") center center/cover no-repeat;
@@ -210,7 +320,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 163px;
+    padding: 120px 103px;
 }
 
 .reservation__container-text {
@@ -233,9 +343,14 @@ a:hover {
     margin: 0;
 }
 
-.hidden {
-    /* visibility: hidden; */
-    display: none;
+.visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+
+    clip: rect(0 0 0 0);
 }
 
 .reservation__form {
@@ -290,8 +405,20 @@ a:hover {
     margin-top: 30px;
 }
 
+
+
+
+
+
+
+
+
+
 .map {
-    padding: 120px 103px;
+    width: 1160px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -317,6 +444,7 @@ a:hover {
 
 .map__adress a {
     color: #011C40;
+    text-decoration: none;
 }
 
 .map__adress:last-child {
@@ -328,6 +456,18 @@ a:hover {
     display: flex;
     align-items: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer {
     width: 100%;
