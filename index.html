@@ -57,7 +57,9 @@
         </section>
         <section class="advantage-cover">
             <section class="advantage container container-padding">
-                <h2>Преимущества</h2>
+                <div class="text-center">
+                    <h2>Преимущества</h2>
+                </div>
                 <ul class="advantage-list">
                     <li class="advantage-list-item">
                         <svg width="27" height="32" viewBox="0 0 27 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -93,7 +95,9 @@
             </section>
         </section>
         <section class="cruises container container-padding">
-            <h2>Ближайшие круизы</h2>
+            <div class="text-center">
+                <h2>Ближайшие круизы</h2>
+            </div>
             <ul class="cruises-list">
                 <li class="cruises-list-item">
                         <h3 class="h3-white">Круиз "Астория"</h3>
@@ -257,43 +261,35 @@
                 </li>
             </ul>
         </section>
-        <section class="reservation container-padding">
-            <div class="reservation-container container">
-                <div class="reservation-container-text">
-                    <h2>Раннее бронирование</h2>
-                    <p>Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
-                </div>
-
-
-                <form action="#" method="post">
-                    <div class="form-title">
-                        <h4>Оставьте заявку и мы свяжемся с вами в ближайшее время</h4>
+        <div class="reservation-cover">
+            <section class="reservation container container-padding">
+                <div class="reservation-container">
+                    <div class="reservation-container-text">
+                        <h2>Раннее бронирование</h2>
+                        <p>Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
                     </div>
-
-                        <label aria-label="Напишите Ваше имя">
-                            <input type="text" name="name" placeholder="Имя" autocomplete="on">
-                        </label>
-    
-                        <label aria-label="Напишите Ваш контактный телефон">
-                            <input type="tel" name="phone" placeholder="Телефон" autocomplete="on" required>
-                        </label>
-    
-                        <label aria-label="Напишите Ваш электронный почтовый ящик">
-                            <input type="email" name="email" placeholder="Email" autocomplete="on" required>
-                        </label>
-
-                        <div class="checkbox-wrapper">
-                            <input id="check" type="checkbox" name="accept" value="accept" checked>
-                            <label for="check">Я согласен на обработку моих персональных данных</label>
+                    <form action="#" method="post">
+                        <div class="form-title">
+                            <h4>Оставьте заявку и мы свяжемся с вами в ближайшее время</h4>
                         </div>
-    
-                        <button type="submit">Оставить заявку</button>
-
-                </form>
-
-
-            </div>
-        </section>
+                            <label aria-label="Напишите Ваше имя">
+                                <input type="text" name="name" placeholder="Имя" autocomplete="on">
+                            </label>
+                            <label aria-label="Напишите Ваш контактный телефон">
+                                <input type="tel" name="phone" placeholder="Телефон" autocomplete="on" required>
+                            </label>
+                            <label aria-label="Напишите Ваш электронный почтовый ящик">
+                                <input type="email" name="email" placeholder="Email" autocomplete="on" required>
+                            </label>
+                            <div class="checkbox-wrapper">
+                                <input id="check" type="checkbox" name="accept" value="accept" checked>
+                                <label for="check">Я согласен на обработку моих персональных данных</label>
+                            </div>
+                            <button type="submit">Оставить заявку</button>
+                    </form>
+                </div>
+            </section>
+        </div>
         <section class="contact container container-padding">
             <h2 class="visually-hidden">Контакты</h2>
             <div class="shrink">

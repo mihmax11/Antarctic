@@ -85,7 +85,6 @@ a:hover {
     width: 1160px;
     margin: 0 auto;
     padding: 0;
-    border: solid 1px red;
 }
 
 .container-padding {
@@ -175,8 +174,8 @@ a:hover {
     margin: 0;
 }
 
-.advantage {
-
+.text-center h2 {
+    text-align  : center;
 }
 
 .advantage-cover {
@@ -212,10 +211,6 @@ a:hover {
     line-height: 20px;
     color: #011C40;
     margin: 0;
-}
-
-.cruises {
-    text-align: center;
 }
 
 .cruises-list {
@@ -306,7 +301,8 @@ a:hover {
     opacity: .7;
 }
 
-.reservation {
+
+.reservation-cover {
     background: url("../img/reservation-cover.jpg") center center/cover no-repeat;
     background-color: #83b3e2;
 }
