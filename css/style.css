@@ -27,72 +27,18 @@
 }
 
 * {
-    box-sizing: border-box;
-    font-family: Montserrat, Arial, Georgia, sans-serif;
-    /* outline: solid 1px red; */
-}
-
-a:hover {
-    opacity: .7;
+    /* border: solid 1px red; */
 }
 
 body {
-    width: 100%;
-    margin: 0 auto;
     background: #F9FBFD;
-}
-
-.container {
-    width: 1366px;
     margin: 0 auto;
-}
-
-.intro {
-    background: url("../img/cover.jpg") center center/cover no-repeat;
-    background-color: #215d99;
-}
-
-.header {
-    max-width: 1160px;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.nav-item {
+    font-family: Montserrat, Arial, serif;
+    font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #F9FBFD;
-    align-items: center;
-    margin-right: 33px;
-    list-style: none;
 }
 
-.nav-item a {
-    text-decoration: none;
-    color: #F9FBFD;
-}
-
-.nav-item:last-child {
-    margin-right: 0;
-}
-
-
-.main {
-    padding: 210px 532px 328px 198px;
-}
-
-.main-info {
-    max-width: 636px;
-    margin: 0;
-}
-
-.main-info__title {
+h1 {
     font-weight: 700;
     font-size: 54px;
     line-height: 66px;
@@ -100,177 +46,195 @@ body {
     margin: 0 0 30px;
 }
 
-.main-info__subtitle {
+h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    color: #011C40;
+    margin: 0 0 60px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 27px;
+    color: #011C40;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 27px;
+    color: #F9FBFD;
+    margin: 0 0 35px 0;
+}
+
+p {
+    font-size: 18px;
+    line-height: 27px;
+    margin: 0;
+}
+
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    opacity: .7;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0;
+    border: solid 1px red;
+}
+
+.container-padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+}
+
+.shrink {
+    flex-shrink: 0;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.main-nav {
+    max-width: 830px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-nav-item {
+    font-size: 16px;
+    line-height: 20px;
+    color: #F9FBFD;
+    list-style: none;
+    margin-right: 33px;
+}
+
+.main-nav-item:last-child {
+    margin-right: 0;
+}
+
+.main-nav-item a {
+    color: #F9FBFD;
+    text-decoration: none;
+}
+
+.main-nav-item a:hover {
+    opacity: .7;
+}
+
+.cover {
+    background: url("../img/cover.jpg") center center/cover no-repeat;
+    background-color: #215d99;
+}
+
+.promo-text-container {
+    width: 636px;
+    padding-top: 210px;
+    padding-bottom: 283px;
+    padding-left: 95px;
+}
+
+.promo-subtitle p {
     font-size: 20px;
     line-height: 24px;
     color: #F9FBFD;
     margin: 0;
 }
 
-
-
-
-
-
-
-
-
-
 .about {
-    width: 1160px;
-    margin: 0 auto;
-}
-
-.about-info {
-    padding-top: 120px;
-    padding-bottom: 120px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.about-info__title {
-    font-weight: 600;
-    font-size: 28px;
-    color: #011C40;
-    margin: 0 0 40px;
+.about-container {
+    max-width: 512px;
 }
 
-.about-info__text {
+.about-text p {
     font-size: 16px;
     line-height: 24px;
     color: #011C40;
     margin: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .advantage {
-    padding: 120px 103px;
+
+}
+
+.advantage-cover {
     background: url("../img/advantage-cover.jpg") center center/cover no-repeat;
-    background-color: #dae8f5;
+    background-color: #dce8f6;
 }
 
-.advantage-info {
-    width: 1130px;
-    margin: 0 auto;
-}
-
-.advantage-info__title {
+.advantage-list {
     display: flex;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 28px;
-    color: #011C40;
-    margin: 0 0 60px;
-}
-
-.advantage-info__cards {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-.advantage-info__card {
+.advantage-list-item {
     width: 360px;
-    min-height: 241px;
-    background: #F9FBFD;
-    padding: 38px 30px 30px;
     list-style: none;
+    padding: 35px 30px 50px;
+    background: #F9FBFD;
+    margin-right: 40px;
 }
 
-.advantage-info__card:last-child {
+.advantage-list-item:last-child {
     margin-right: 0;
 }
 
-.advantage-info__subtitle {
+.advantage-title {
+    margin-top: 25px;
     margin-bottom: 20px;
-    font-weight: 500;
-    font-size: 18px;
-    color: #011C40;
-    margin: 25px 0 20px;
 }
 
-.advantage-info__text {
+.advantage-list-item-text p {
     font-size: 14px;
     line-height: 20px;
     color: #011C40;
     margin: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .cruises {
-    padding: 120px 103px;
+    text-align: center;
 }
 
-.cruises-info {
-    width: 1130px;
-    margin: 0 auto;
-}
-
-.cruises-info__title {
-    display: flex;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 28px;
-    color: #011C40;
-    margin: 0 0 60px;
-}
-
-.cruises-info__cards {
+.cruises-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 0 30px;
     padding: 0;
-    margin: 0;
 }
 
-.cruises-info__card {
+.cruises-list-item {
     position: relative;
-    width: 260px;
-    height: 386px;
-    margin-bottom: 30px;
-    /* Как убрать у второго ряда mb? */
     list-style: none;
+    margin: 0 0 30px 0;
+    padding: 0;
+    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
 }
 
-.cruises-info__card-title {
+.h3-white {
     position: absolute;
     bottom: 30px;
     left: 30px;
@@ -280,19 +244,26 @@ body {
     color: #F9FBFD;
 }
 
-.cruises-info__more {
+.cruises-list-item-more-container {
     position: absolute;
+    top: 0px;
     left: 0;
     bottom: 0;
     right: 0;
-    top: 0;
-    display: none;
     background: #011C40;
     box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
-    padding: 35px 25px;
+    display: none;
+    padding: 25px;
 }
 
-.cruises-info__more-parameter {
+.h3-white-hover {
+    font-weight: 500;
+    font-size: 18px;
+    color: #F9FBFD;
+    margin: 0 0 15px 0;
+}
+
+.more-parameter {
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
@@ -300,203 +271,228 @@ body {
     margin: 0;
 }
 
-.cruises-info__card:hover .cruises-info__more {
+.more-value {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #D8D8D9;
+    margin: 0 0 20px 0;
+}
+
+.more-value:last-child {
+    margin-bottom: 0;
+}
+
+.cruises-list-item-more {
+    margin: 0; 
+}
+
+.cruises-list-item:hover .cruises-list-item-more-container {
     display: block;
 }
 
+.cruises-button {
+    width: 100%;
+    background: #F9FBFD;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #011C40;
+    text-decoration: none;
+    padding: 12px 50px;
+}
 
-
-
-
-
-
-
-
-
+.cruises-button:hover {
+    opacity: .7;
+}
 
 .reservation {
     background: url("../img/reservation-cover.jpg") center center/cover no-repeat;
-    background-color: #daf2fe;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 120px 103px;
+    background-color: #83b3e2;
 }
 
-.reservation__container-text {
+.reservation-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reservation-container-text {
     width: 500px;
 }
 
-.reservation__title {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 60px;
-    color: #011C40;
-    margin-bottom: 30px;
-}
-
-.reservation__text {
-    width: 351px;
-    font-size: 18px;
-    line-height: 27px;
-    color: #011C40;
-    margin: 0;
-}
-
-.visually-hidden {
-    position: absolute;
-
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-
-    clip: rect(0 0 0 0);
-}
-
-.reservation__form {
-    width: 403px;
-    background: #011C40;
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 403px;
+    background: #011c40;
     box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
     margin-left: 144px;
     padding: 50px;
 }
 
-.reservation__form-title {
+.form-title h4 {
+    width: 303px;
     font-weight: 500;
     font-size: 17px;
     line-height: 27px;
-    color: #F9FBFD;
+    color: #f9fbfd;
     margin-bottom: 35px;
 }
 
-.reservation__form-input {
-    width: 100%;
-    height: 43px;
+input {
+    width: 303px;
     padding: 16px;
-    background: #F9FBFD;
+    background: #f9fbfd;
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 21px;
-    align-items: center;
-    color: #011C40;
+    color: #011c40;
+    border: 0;
 }
 
-.reservation__checkbox {
+.checkbox-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 40px;
+}
+
+.checkbox-wrapper input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+}
+
+.checkbox-wrapper input + label {
+    font-size: 10px;
+    line-height: 13px;
+    color: #F9FBFD;
+    padding-left: 23px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.checkbox-wrapper input + label::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
     width: 18px;
     height: 18px;
     background: #F9FBFD;
 }
 
-.reservation__text-checkbox {
-    margin: 0 0 0 5px;
-    font-size: 9px;
-    color: #F9FBFD;
+.checkbox-wrapper input:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/icon/check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.reservation__button {
+button {
     width: 100%;
     height: 43px;
-    background: #F9FBFD;
+    background: #f9fbfd;
     cursor: pointer;
     font-weight: 600;
     font-size: 14px;
     line-height: 21px;
-    color: #011C40;
+    color: #011c40;
     margin-top: 30px;
+    border: 0;
+    padding: 0;
 }
 
+button:hover {
+    background: #011C40;
+    color: #F9FBFD;
+    border: solid 1px #F9FBFD;
+    transition: background-color .3s;
+}
 
-
-
-
-
-
-
-
-
-.map {
-    width: 1160px;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    margin: 0 auto;
+.contact {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.map__text {
-    margin-left: 100px;
-}
-
-.map__title {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
-    color: #011C40;
-    margin-bottom: 40px;
-}
-
-.map__adress {
-    margin-bottom: 25px;
+.contact-container {
+    width: 500px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 
-.map__adress a {
-    color: #011C40;
+.adress p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 45px;
+    margin-bottom: 33px;
+}
+
+.phone p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.phone a {
     text-decoration: none;
+    color: #011C40;
 }
 
-.map__adress:last-child {
-    margin-bottom: 0;
+.phone a:hover {
+    opacity: .7;
 }
 
-.map__icon {
-    margin-right: 10px;
-    display: flex;
-    align-items: center;
+.contact-icon {
+    margin: 0 10px 0 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .footer {
-    width: 100%;
     background: #011C40;
-    padding: 50px 103px;
+}
+
+.footer-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.footer__logo {
-    margin-right: 40px;
+.footer-nav {
+    max-width: 600px;
+    margin: 0;
+    padding: 0;
 }
 
-.footer__nav {
-    margin-right: 260px;
-    align-items: center;
-}
-
-.social {
+.social-media {
+    max-width: 150px;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
+    margin: 0;
+    padding: 0;
 }
 
-.social-item {
+.social-media-item {
+    margin: 0;
+    padding: 0;
     margin-right: 33px;
     list-style: none;
 }
 
-.social-item:last-child {
+.social-media-item:last-child {
     margin-right: 0;
+}
+
+.social-media-item a:hover {
+    opacity: .7;
 }
