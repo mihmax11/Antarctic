@@ -92,7 +92,7 @@ a:hover {
     padding-bottom: 120px;
 }
 
-.visually-hidden {
+.visually-hidden h2 {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -229,7 +229,7 @@ a:hover {
     background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
 }
 
-.h3-white {
+.h3-white h3 {
     position: absolute;
     bottom: 30px;
     left: 30px;
