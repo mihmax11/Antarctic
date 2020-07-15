@@ -139,8 +139,16 @@ a:hover {
 }
 
 .cover {
-    background: url("../img/cover.jpg") center center/cover no-repeat;
+    background: url("../img/cover@1x.jpg") center center/cover no-repeat;
     background-color: #215d99;
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi){
+    .cover {
+        background: url("../img/cover@2x.jpg") center center/cover no-repeat;
+    }
 }
 
 .promo-text-container {
@@ -179,8 +187,16 @@ a:hover {
 }
 
 .advantage-cover {
-    background: url("../img/advantage-cover.jpg") center center/cover no-repeat;
+    background: url("../img/advantage-cover@1x.jpg") center center/cover no-repeat;
     background-color: #dce8f6;
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi){
+    .advantage-cover {
+        background: url("../img/advantage-cover@2x.jpg") center center/cover no-repeat;
+    }
 }
 
 .advantage-list {
@@ -304,8 +320,16 @@ a:hover {
 
 
 .reservation-cover {
-    background: url("../img/reservation-cover.jpg") center center/cover no-repeat;
+    background: url("../img/reservation-cover@1x.jpg") center center/cover no-repeat;
     background-color: #83b3e2;
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi){
+    .reservation-cover {
+        background: url("../img/reservation-cover@2x.jpg") center center/cover no-repeat;
+    }
 }
 
 .reservation-container {
