@@ -204,6 +204,7 @@ a:hover {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    margin-bottom: -40px;
 }
 
 .advantage-list-item {
@@ -212,9 +213,10 @@ a:hover {
     padding: 30px 20px 50px;
     background: #F9FBFD;
     margin-right: 40px;
+    margin-bottom: 40px;
 }
 
-.advantage-list-item:last-child {
+.advantage-list-item:nth-child(3n) {
     margin-right: 0;
 }
 
