@@ -143,9 +143,8 @@ a:hover {
     background-color: #215d99;
 }
 
-@media
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 120dpi){
+@media (-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
     .cover {
         background: url("../img/cover@2x.jpg") center center/cover no-repeat;
     }
@@ -183,7 +182,7 @@ a:hover {
 }
 
 .text-center h2 {
-    text-align  : center;
+    text-align: center;
 }
 
 .advantage-cover {
@@ -191,9 +190,8 @@ a:hover {
     background-color: #dce8f6;
 }
 
-@media
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 120dpi){
+@media (-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
     .advantage-cover {
         background: url("../img/advantage-cover@2x.jpg") center center/cover no-repeat;
     }
@@ -232,6 +230,15 @@ a:hover {
     margin: 0;
 }
 
+
+
+
+
+
+
+
+
+
 .cruises-list {
     display: flex;
     justify-content: space-between;
@@ -248,77 +255,113 @@ a:hover {
     background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
 }
 
-.h3-white h3 {
+  .back h3 {
+    margin: 0 0 15px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #F9FBFD;
+  }
+  
+  .back p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #D8D8D9;
+    margin: 0 0 20px;
+  }
+  
+  .back span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #F9FBFD;
+  }
+  
+  .back a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #011C40;
+    background: #F9FBFD;
+    padding: 14px 46px;
+    text-decoration: none;
+  }
+  
+  .card-btn {
+    padding: 20px 0 0;
+  }
+  
+  .back-content {
+    margin: 0;
+    padding: 25px 20px;
+  }
+  
+  .front h3 {
     position: absolute;
     bottom: 30px;
     left: 30px;
     margin: 0;
     font-weight: 500;
     font-size: 18px;
+    line-height: 27px;
     color: #F9FBFD;
-}
-
-.cruises-list-item-more-container {
+  }
+  
+  .cruises-list-item > .front {
     position: absolute;
-    top: 0px;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    transform: perspective(600px) rotateY(0deg);
+    width: 260px;
+    height: 386px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+  }
+  
+  .cruises-list-item > .back {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    transform: perspective(600px) rotateY(180deg);
     background: #011C40;
     box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
-    display: none;
-    padding: 25px;
-}
+    color: #fff;
+    width: 260px;
+    height: 386px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+  }
+  
+  .cruises-list-item:hover > .front {
+  transform: perspective(600px) rotateY(-180deg);
+  }
+  
+  .cruises-list-item:hover > .back {
+  transform: perspective(600px) rotateY(0deg);
+  }
+  
 
-.h3-white-hover {
-    font-weight: 500;
-    font-size: 18px;
-    color: #F9FBFD;
-    margin: 0 0 15px 0;
-}
 
-.more-parameter {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    color: #F9FBFD;
-    margin: 0;
-}
 
-.more-value {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    color: #D8D8D9;
-    margin: 0 0 20px 0;
-}
 
-.more-value:last-child {
-    margin-bottom: 0;
-}
 
-.cruises-list-item-more {
-    margin: 0; 
-}
 
-.cruises-list-item:hover .cruises-list-item-more-container {
-    display: block;
-}
 
-.cruises-button {
-    width: 100%;
-    background: #F9FBFD;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
-    color: #011C40;
-    text-decoration: none;
-    padding: 12px 50px;
-}
 
-.cruises-button:hover {
-    opacity: .7;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .reservation-cover {
@@ -326,9 +369,8 @@ a:hover {
     background-color: #83b3e2;
 }
 
-@media
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 120dpi){
+@media (-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
     .reservation-cover {
         background: url("../img/reservation-cover@2x.jpg") center center/cover no-repeat;
     }
@@ -389,7 +431,7 @@ input {
     clip: rect(0 0 0 0);
 }
 
-.checkbox-wrapper input + label {
+.checkbox-wrapper input+label {
     font-size: 10px;
     line-height: 13px;
     color: #F9FBFD;
@@ -398,7 +440,7 @@ input {
     margin-top: 8px;
 }
 
-.checkbox-wrapper input + label::before {
+.checkbox-wrapper input+label::before {
     content: "";
     position: absolute;
     top: 5px;
@@ -408,7 +450,7 @@ input {
     background: #F9FBFD;
 }
 
-.checkbox-wrapper input:checked + label::after {
+.checkbox-wrapper input:checked+label::after {
     content: "";
     position: absolute;
     top: 5px;
