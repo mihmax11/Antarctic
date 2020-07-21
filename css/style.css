@@ -256,7 +256,7 @@ a:hover {
 }
 
   .back h3 {
-    margin: 0 0 15px;
+    margin: 0 0 10px;
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
@@ -266,9 +266,9 @@ a:hover {
   .back p {
     font-weight: 400;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 16px;
     color: #D8D8D9;
-    margin: 0 0 20px;
+    margin: 0 0 10px;
   }
   
   .back span {
@@ -340,26 +340,6 @@ a:hover {
   .cruises-list-item:hover > .back {
   transform: perspective(600px) rotateY(0deg);
   }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
