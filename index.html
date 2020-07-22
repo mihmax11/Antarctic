@@ -289,10 +289,10 @@
                             <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
                         </div>
                             <label aria-label="Напишите Ваше имя">
-                                <input type="text" name="name" placeholder="Имя" autocomplete="on" required>
+                                <input type="text" name="name" placeholder="Имя" autocomplete="on" pattern="[a-zA-Zа-яА-ЯёЁ ]+" required>
                             </label>
                             <label aria-label="Напишите Ваш контактный телефон">
-                                <input type="tel" name="phone" placeholder="Телефон" autocomplete="on" required>
+                                <input type="tel" name="phone" placeholder="Телефон" autocomplete="on" pattern="[0-9,+,\-,()]{6,20}" required>
                             </label>
                             <label aria-label="Напишите Ваш электронный почтовый ящик">
                                 <input type="email" name="email" placeholder="Email" autocomplete="on" required>
