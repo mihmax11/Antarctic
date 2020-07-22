@@ -43,7 +43,7 @@ h1 {
     font-size: 54px;
     line-height: 66px;
     color: #F9FBFD;
-    margin: 0 0 30px;
+    margin: 0 0 11px;
 }
 
 h2 {
@@ -152,7 +152,7 @@ a:hover {
 
 .promo-text-container {
     width: 636px;
-    padding-top: 210px;
+    padding-top: 190px;
     padding-bottom: 283px;
     padding-left: 95px;
 }
