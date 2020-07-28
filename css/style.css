@@ -26,8 +26,14 @@
         url("../fonts/Montserrat-Bold.woff2") format("woff");
 }
 
-* {
-    /* border: solid 1px red; */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
 }
 
 body {
@@ -41,7 +47,6 @@ body {
 h1 {
     font-weight: 700;
     font-size: 54px;
-    line-height: 66px;
     color: #F9FBFD;
     margin: 0 0 11px;
 }
@@ -49,27 +54,23 @@ h1 {
 h2 {
     font-weight: 600;
     font-size: 28px;
-    line-height: 42px;
     color: #011C40;
-    margin: 0 0 60px;
 }
 
 h3 {
     font-size: 18px;
-    line-height: 27px;
     color: #011C40;
 }
 
 h4 {
     font-size: 18px;
-    line-height: 27px;
+    line-height: 100%;
     color: #F9FBFD;
     margin: 0 0 35px 0;
 }
 
 p {
     font-size: 18px;
-    line-height: 27px;
     margin: 0;
 }
 
@@ -108,7 +109,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 35px;
+    padding-top: 29px;
 }
 
 .main-nav {
@@ -151,9 +152,9 @@ a:hover {
 }
 
 .promo-text-container {
-    width: 636px;
+    width: 731px;
     padding-top: 190px;
-    padding-bottom: 283px;
+    padding-bottom: 278px;
     padding-left: 95px;
 }
 
@@ -168,10 +169,16 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 119px;
+    padding-bottom: 116px;
 }
 
 .about-container {
-    max-width: 512px;
+    max-width: 560px;
+}
+
+.about-container h2 {
+    margin: 0 0 30px;
 }
 
 .about-text p {
@@ -183,6 +190,13 @@ a:hover {
 
 .text-center h2 {
     text-align: center;
+    margin: 0 0 60px;
+    line-height: 100%;
+}
+
+.advantage {
+    padding-top: 119px;
+    padding-bottom: 78px;
 }
 
 .advantage-cover {
@@ -200,17 +214,16 @@ a:hover {
 .advantage-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
-    margin-bottom: -40px;
 }
 
 .advantage-list-item {
-    width: 317px;
+    width: 360px;
     list-style: none;
-    padding: 30px 20px 50px;
+    padding: 25px 20px 30px 20px;
     background: #F9FBFD;
-    margin-right: 40px;
     margin-bottom: 40px;
 }
 
@@ -223,11 +236,21 @@ a:hover {
     margin-bottom: 20px;
 }
 
+.advantage-list-item h3 {
+    line-height: 100%;
+    margin: 19px 0 20px;
+}
+
 .advantage-list-item-text p {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 18px;
     color: #011C40;
     margin: 0;
+}
+
+.cruises {
+    padding-top: 117px;
+    padding-bottom: 83px;
 }
 
 .cruises-list {
@@ -332,8 +355,6 @@ a:hover {
   }
 
 
-
-
 .reservation-cover {
     background: url("../img/reservation-cover@1x.jpg") center center/cover no-repeat;
     background-color: #83b3e2;
@@ -354,6 +375,17 @@ a:hover {
 
 .reservation-container-text {
     width: 500px;
+    margin: 10px 0 0 55px;
+}
+
+.reservation-container-text h2 {
+    font-size: 40px;
+    line-height: 100%;
+    margin: 0 0 30px;
+}
+
+.reservation-container-text p {
+    width: 352px;
 }
 
 form {
@@ -362,7 +394,7 @@ form {
     max-width: 403px;
     background: #011c40;
     box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
-    margin-left: 144px;
+    margin: 53px 66px 50px 0;
     padding: 50px;
 }
 
@@ -370,13 +402,13 @@ form {
     width: 303px;
     font-weight: 500;
     font-size: 17px;
-    line-height: 27px;
     color: #f9fbfd;
-    margin-bottom: 35px;
+    margin-bottom: 34px;
 }
 
 input {
     width: 303px;
+    height: 43px;
     padding: 16px;
     background: #f9fbfd;
     margin-bottom: 20px;
@@ -441,7 +473,7 @@ button {
     font-size: 14px;
     line-height: 21px;
     color: #011c40;
-    margin-top: 30px;
+    margin-top: 7px;
     border: 0;
     padding: 0;
 }
@@ -457,24 +489,26 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 118px;
 }
 
 .contact-container {
     width: 500px;
     display: flex;
     flex-direction: column;
+    margin-left: 100px;
 }
 
 .adress p {
     font-size: 16px;
-    line-height: 24px;
+    /* line-height: 24px; */
     margin-top: 45px;
     margin-bottom: 33px;
 }
 
 .phone p {
     font-size: 16px;
-    line-height: 24px;
+    /* line-height: 24px; */
 }
 
 .phone a {
@@ -496,15 +530,14 @@ button:hover {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 47px;
+    padding-bottom: 46px;
 }
 
 .footer-nav {
     max-width: 600px;
-    margin: 0;
+    margin: 0 0 0 40px;
     padding: 0;
 }
 
@@ -513,7 +546,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    margin: 0;
+    margin: 0 0 0 340px;
     padding: 0;
 }
 
